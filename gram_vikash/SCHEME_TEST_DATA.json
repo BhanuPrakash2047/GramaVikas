@@ -1,0 +1,240 @@
+{
+  "_info": "GramVikash Scheme Test Data — POST to /api/schemes/create (with Bearer token). After creating schemes, run the SQL at the bottom to insert translations (TE/HI) and rule translations.",
+
+  "schemes": [
+
+    {
+      "_comment": "─── AGRICULTURE SCHEME 1 ───",
+      "schemeName": "PM-KISAN Samman Nidhi",
+      "schemeCode": "PMKISAN-001",
+      "description": "Under PM-KISAN, the central government provides income support of ₹6,000 per year to all land-holding farmer families across the country. The amount is paid in three equal installments of ₹2,000 every four months directly into the bank accounts of the beneficiaries.",
+      "benefitDetails": "₹6,000 per year transferred directly to farmer bank accounts in 3 installments of ₹2,000 each. Covers all operational farming costs including seeds, fertilizers, and labour.",
+      "category": "AGRICULTURE",
+      "state": null,
+      "eligibilityGroups": [
+        {
+          "groupName": "BASIC_REQUIREMENTS",
+          "groupOperator": "AND",
+          "rules": [
+            { "fieldName": "age", "operator": ">=", "value": "18", "fieldType": "NUMBER" },
+            { "fieldName": "landSize", "operator": "<=", "value": "5", "fieldType": "NUMBER" },
+            { "fieldName": "income", "operator": "<=", "value": "200000", "fieldType": "NUMBER" },
+            { "fieldName": "isFarmer", "operator": "=", "value": "true", "fieldType": "BOOLEAN" }
+          ]
+        }
+      ],
+      "faqs": [
+        { "question": "Who is eligible for PM-KISAN?", "answer": "All land-holding farmer families with cultivable land up to 5 hectares and annual income below ₹2,00,000 are eligible.", "language": "EN", "displayOrder": 1 },
+        { "question": "How is the money transferred?", "answer": "The amount of ₹6,000 per year is transferred in 3 equal installments of ₹2,000 directly to the Aadhaar-linked bank account.", "language": "EN", "displayOrder": 2 },
+        { "question": "What documents are required?", "answer": "Aadhaar card, bank passbook, land ownership documents, and a self-declaration form are required.", "language": "EN", "displayOrder": 3 },
+        { "question": "PM-KISAN కి ఎవరు అర్హులు?", "answer": "5 హెక్టార్ల వరకు సాగు భూమి ఉన్న మరియు వార్షిక ఆదాయం ₹2,00,000 లోపు ఉన్న అన్ని భూ యజమాన రైతు కుటుంబాలు అర్హులు.", "language": "TE", "displayOrder": 1 },
+        { "question": "డబ్బు ఎలా బదిలీ అవుతుంది?", "answer": "సంవత్సరానికి ₹6,000 మొత్తం 3 సమాన వాయిదాలలో ₹2,000 చొప్పున నేరుగా ఆధార్-లింక్డ్ బ్యాంక్ ఖాతాకు బదిలీ చేయబడుతుంది.", "language": "TE", "displayOrder": 2 },
+        { "question": "PM-KISAN के लिए कौन पात्र है?", "answer": "5 हेक्टेयर तक की खेती योग्य भूमि वाले और ₹2,00,000 से कम वार्षिक आय वाले सभी भूधारक किसान परिवार पात्र हैं।", "language": "HI", "displayOrder": 1 },
+        { "question": "पैसा कैसे ट्रांसफर होता है?", "answer": "₹6,000 प्रति वर्ष की राशि 3 समान किस्तों में ₹2,000 प्रत्यक्ष रूप से आधार-लिंक्ड बैंक खाते में भेजी जाती है।", "language": "HI", "displayOrder": 2 }
+      ]
+    },
+
+    {
+      "_comment": "─── AGRICULTURE SCHEME 2 ───",
+      "schemeName": "Rythu Bandhu Scheme",
+      "schemeCode": "RYTHUBANDHU-001",
+      "description": "Rythu Bandhu is a farmer investment support scheme by the Government of Telangana providing financial assistance to farmer families for their agricultural needs every crop season.",
+      "benefitDetails": "₹10,000 per acre per year (₹5,000 per crop season for Kharif and Rabi). Amount is credited to farmer bank accounts before the start of each season.",
+      "category": "AGRICULTURE",
+      "state": "Telangana",
+      "eligibilityGroups": [
+        {
+          "groupName": "BASIC_REQUIREMENTS",
+          "groupOperator": "AND",
+          "rules": [
+            { "fieldName": "age", "operator": ">=", "value": "18", "fieldType": "NUMBER" },
+            { "fieldName": "landSize", "operator": ">=", "value": "1", "fieldType": "NUMBER" },
+            { "fieldName": "isFarmer", "operator": "=", "value": "true", "fieldType": "BOOLEAN" },
+            { "fieldName": "state", "operator": "=", "value": "Telangana", "fieldType": "STRING" }
+          ]
+        }
+      ],
+      "faqs": [
+        { "question": "What is the benefit amount?", "answer": "₹10,000 per acre per year, paid in two installments of ₹5,000 each for Kharif and Rabi seasons.", "language": "EN", "displayOrder": 1 },
+        { "question": "Is there a land ceiling?", "answer": "No, there is no upper limit on land holding. All pattadar farmers in Telangana are eligible.", "language": "EN", "displayOrder": 2 },
+        { "question": "ప్రయోజనం ఎంత?", "answer": "సంవత్సరానికి ఎకరాకు ₹10,000, ఖరీఫ్ మరియు రబీ సీజన్లలో ₹5,000 చొప్పున రెండు వాయిదాలలో చెల్లించబడుతుంది.", "language": "TE", "displayOrder": 1 },
+        { "question": "భూమి పరిమితి ఉందా?", "answer": "లేదు, భూమి యాజమాన్యంపై ఎటువంటి ఎగువ పరిమితి లేదు. తెలంగాణలోని అన్ని పట్టాదార్ రైతులు అర్హులు.", "language": "TE", "displayOrder": 2 },
+        { "question": "लाभ राशि कितनी है?", "answer": "₹10,000 प्रति एकड़ प्रति वर्ष, खरीफ और रबी सीजन में ₹5,000-₹5,000 की दो किस्तों में।", "language": "HI", "displayOrder": 1 }
+      ]
+    },
+
+    {
+      "_comment": "─── HEALTH SCHEME 1 ───",
+      "schemeName": "Ayushman Bharat - PMJAY",
+      "schemeCode": "PMJAY-001",
+      "description": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PMJAY) is the world's largest health insurance scheme providing free health coverage of ₹5 lakh per family per year for secondary and tertiary hospitalization.",
+      "benefitDetails": "Free health insurance cover of ₹5,00,000 per family per year. Covers hospitalization expenses, pre and post-hospitalization costs, day-care surgeries at empanelled hospitals across India.",
+      "category": "HEALTH",
+      "state": null,
+      "eligibilityGroups": [
+        {
+          "groupName": "INCOME_CRITERIA",
+          "groupOperator": "AND",
+          "rules": [
+            { "fieldName": "age", "operator": ">=", "value": "0", "fieldType": "NUMBER" },
+            { "fieldName": "income", "operator": "<=", "value": "300000", "fieldType": "NUMBER" },
+            { "fieldName": "hasBPLCard", "operator": "=", "value": "true", "fieldType": "BOOLEAN" }
+          ]
+        }
+      ],
+      "faqs": [
+        { "question": "What does PMJAY cover?", "answer": "PMJAY covers up to ₹5 lakh per family per year for secondary and tertiary hospitalization including surgery, diagnostics, medications, and follow-up care.", "language": "EN", "displayOrder": 1 },
+        { "question": "Which hospitals accept PMJAY?", "answer": "All government hospitals and empanelled private hospitals across India accept the Ayushman Bharat card. You can find nearby hospitals on the PMJAY portal.", "language": "EN", "displayOrder": 2 },
+        { "question": "How to get the Ayushman card?", "answer": "Visit your nearest Common Service Centre (CSC) or Ayushman Mitra at empanelled hospitals with Aadhaar card, ration card, and income proof.", "language": "EN", "displayOrder": 3 },
+        { "question": "PMJAY ఏమి కవర్ చేస్తుంది?", "answer": "PMJAY ద్వితీయ మరియు తృతీయ ఆసుపత్రిలో శస్త్రచికిత్స, రోగ నిర్ధారణ, మందులు మరియు ఫాలో-అప్ సంరక్షణతో సహా కుటుంబానికి సంవత్సరానికి ₹5 లక్షల వరకు కవర్ చేస్తుంది.", "language": "TE", "displayOrder": 1 },
+        { "question": "ఆయుష్మాన్ కార్డ్ ఎలా పొందాలి?", "answer": "మీ ఆధార్ కార్డ్, రేషన్ కార్డ్ మరియు ఆదాయ ధృవీకరణతో సమీపంలోని కామన్ సర్వీస్ సెంటర్ (CSC) ని సందర్శించండి.", "language": "TE", "displayOrder": 2 },
+        { "question": "PMJAY क्या कवर करता है?", "answer": "PMJAY सर्जरी, डायग्नोस्टिक्स, दवाइयों और फॉलो-अप देखभाल सहित प्रति परिवार प्रति वर्ष ₹5 लाख तक का कवर प्रदान करता है।", "language": "HI", "displayOrder": 1 },
+        { "question": "आयुष्मान कार्ड कैसे बनवाएं?", "answer": "अपने आधार कार्ड, राशन कार्ड और आय प्रमाण के साथ निकटतम कॉमन सर्विस सेंटर (CSC) जाएं।", "language": "HI", "displayOrder": 2 }
+      ]
+    },
+
+    {
+      "_comment": "─── HEALTH SCHEME 2 ───",
+      "schemeName": "NTR Vaidya Seva",
+      "schemeCode": "NTRVAIDYA-001",
+      "description": "NTR Vaidya Seva provides cashless healthcare services to families below the poverty line in Andhra Pradesh. It covers a wide range of medical procedures and surgeries at network hospitals.",
+      "benefitDetails": "Cashless treatment up to ₹2,50,000 per family per year at empanelled hospitals. Covers 1,059 procedures including cardiac surgeries, cancer treatment, kidney transplants, and more.",
+      "category": "HEALTH",
+      "state": "Andhra Pradesh",
+      "eligibilityGroups": [
+        {
+          "groupName": "BASIC_REQUIREMENTS",
+          "groupOperator": "AND",
+          "rules": [
+            { "fieldName": "income", "operator": "<=", "value": "500000", "fieldType": "NUMBER" },
+            { "fieldName": "state", "operator": "=", "value": "Andhra Pradesh", "fieldType": "STRING" },
+            { "fieldName": "hasWhiteRationCard", "operator": "=", "value": "true", "fieldType": "BOOLEAN" }
+          ]
+        }
+      ],
+      "faqs": [
+        { "question": "Who is eligible for NTR Vaidya Seva?", "answer": "Families in Andhra Pradesh with a White Ration Card (BPL) and annual income below ₹5,00,000 are eligible.", "language": "EN", "displayOrder": 1 },
+        { "question": "What treatments are covered?", "answer": "Over 1,059 medical procedures including cardiac surgery, cancer treatment, orthopaedic procedures, and kidney transplants.", "language": "EN", "displayOrder": 2 },
+        { "question": "NTR వైద్య సేవకు ఎవరు అర్హులు?", "answer": "ఆంధ్రప్రదేశ్‌లో వైట్ రేషన్ కార్డ్ (BPL) ఉన్న మరియు వార్షిక ఆదాయం ₹5,00,000 లోపు ఉన్న కుటుంబాలు అర్హులు.", "language": "TE", "displayOrder": 1 },
+        { "question": "ఏ చికిత్సలు కవర్ అవుతాయి?", "answer": "కార్డియాక్ సర్జరీ, క్యాన్సర్ చికిత్స, ఆర్థోపెడిక్ ప్రక్రియలు మరియు కిడ్నీ ట్రాన్స్‌ప్లాంట్‌లతో సహా 1,059 కంటే ఎక్కువ వైద్య ప్రక్రియలు.", "language": "TE", "displayOrder": 2 }
+      ]
+    },
+
+    {
+      "_comment": "─── HOUSING SCHEME 1 ───",
+      "schemeName": "Pradhan Mantri Awas Yojana - Gramin",
+      "schemeCode": "PMAYG-001",
+      "description": "PMAY-Gramin provides financial assistance for construction of pucca houses to eligible rural households who are houseless or living in kutcha/dilapidated houses.",
+      "benefitDetails": "₹1,20,000 in plain areas and ₹1,30,000 in hilly/difficult areas. Additional ₹12,000 for toilet construction under SBM. 90 days of unskilled labour under MGNREGA.",
+      "category": "HOUSING",
+      "state": null,
+      "eligibilityGroups": [
+        {
+          "groupName": "INCOME_LAND_CRITERIA",
+          "groupOperator": "AND",
+          "rules": [
+            { "fieldName": "age", "operator": ">=", "value": "18", "fieldType": "NUMBER" },
+            { "fieldName": "income", "operator": "<=", "value": "300000", "fieldType": "NUMBER" },
+            { "fieldName": "ownsPuccaHouse", "operator": "=", "value": "false", "fieldType": "BOOLEAN" },
+            { "fieldName": "landSize", "operator": "<=", "value": "3", "fieldType": "NUMBER" }
+          ]
+        }
+      ],
+      "faqs": [
+        { "question": "What is the financial assistance under PMAY-G?", "answer": "₹1,20,000 for plain areas and ₹1,30,000 for hilly/difficult areas, plus ₹12,000 for toilet construction.", "language": "EN", "displayOrder": 1 },
+        { "question": "Who can apply?", "answer": "Rural households who are houseless, living in kutcha houses, or in dilapidated houses with annual income below ₹3 lakh.", "language": "EN", "displayOrder": 2 },
+        { "question": "How long does construction take?", "answer": "Beneficiaries must complete the house construction within 12 months from the date of sanction.", "language": "EN", "displayOrder": 3 },
+        { "question": "PMAY-G కింద ఆర్థిక సహాయం ఎంత?", "answer": "మైదాన ప్రాంతాలకు ₹1,20,000 మరియు కొండ/కష్టమైన ప్రాంతాలకు ₹1,30,000, అలాగే మరుగుదొడ్డి నిర్మాణానికి ₹12,000.", "language": "TE", "displayOrder": 1 },
+        { "question": "ఎవరు దరఖాస్తు చేయవచ్చు?", "answer": "ఇల్లు లేని, కచ్చా ఇళ్లలో నివసిస్తున్న లేదా శిథిలమైన ఇళ్లలో ఉన్న మరియు వార్షిక ఆదాయం ₹3 లక్షల లోపు ఉన్న గ్రామీణ కుటుంబాలు.", "language": "TE", "displayOrder": 2 },
+        { "question": "PMAY-G में कितनी आर्थिक सहायता मिलती है?", "answer": "मैदानी क्षेत्रों में ₹1,20,000 और पहाड़ी/कठिन क्षेत्रों में ₹1,30,000, साथ ही शौचालय निर्माण के लिए ₹12,000।", "language": "HI", "displayOrder": 1 },
+        { "question": "कौन आवेदन कर सकता है?", "answer": "बेघर, कच्चे मकान या जीर्ण-शीर्ण मकान में रहने वाले और ₹3 लाख से कम वार्षिक आय वाले ग्रामीण परिवार।", "language": "HI", "displayOrder": 2 }
+      ]
+    },
+
+    {
+      "_comment": "─── HOUSING SCHEME 2 ───",
+      "schemeName": "YSR Jagananna Colonies",
+      "schemeCode": "YSRJC-001",
+      "description": "YSR Jagananna Colonies scheme provides house-site pattas (land titles) and financial assistance for house construction to eligible poor families in Andhra Pradesh who do not own land or house.",
+      "benefitDetails": "Free house-site patta of 1.5 cents (urban) or 1.5-3.5 cents (rural). House construction assistance of ₹1,80,000. Infrastructure including roads, drainage, water, and electricity in colony layouts.",
+      "category": "HOUSING",
+      "state": "Andhra Pradesh",
+      "eligibilityGroups": [
+        {
+          "groupName": "BASIC_REQUIREMENTS",
+          "groupOperator": "AND",
+          "rules": [
+            { "fieldName": "age", "operator": ">=", "value": "18", "fieldType": "NUMBER" },
+            { "fieldName": "income", "operator": "<=", "value": "300000", "fieldType": "NUMBER" },
+            { "fieldName": "state", "operator": "=", "value": "Andhra Pradesh", "fieldType": "STRING" },
+            { "fieldName": "ownsPuccaHouse", "operator": "=", "value": "false", "fieldType": "BOOLEAN" }
+          ]
+        }
+      ],
+      "faqs": [
+        { "question": "Who is eligible?", "answer": "Landless and houseless families in AP with annual income below ₹3 lakh and no house site in family name.", "language": "EN", "displayOrder": 1 },
+        { "question": "What benefits are provided?", "answer": "Free house-site patta (1.5 to 3.5 cents) + ₹1,80,000 house construction aid + colony infrastructure (roads, water, electricity).", "language": "EN", "displayOrder": 2 },
+        { "question": "ఎవరు అర్హులు?", "answer": "ఆంధ్రప్రదేశ్‌లో భూమి మరియు ఇల్లు లేని కుటుంబాలు, వార్షిక ఆదాయం ₹3 లక్షల లోపు ఉన్నవారు.", "language": "TE", "displayOrder": 1 },
+        { "question": "ఏ ప్రయోజనాలు అందించబడతాయి?", "answer": "ఉచిత హౌస్-సైట్ పట్టా (1.5 నుండి 3.5 సెంట్లు) + ₹1,80,000 ఇల్లు నిర్మాణ సహాయం + కాలనీ మౌలిక సదుపాయాలు.", "language": "TE", "displayOrder": 2 }
+      ]
+    }
+  ],
+
+  "_sql_translations": {
+    "_info": "After creating all 6 schemes above, note the scheme IDs and rule IDs from the responses. Then insert translations using SQL or a REST client. Below are example SQL statements — replace scheme_id and rule_id values with actual IDs from your DB.",
+
+    "scheme_translations_sql": [
+      "-- PM-KISAN Telugu translation (replace 1 with actual scheme_id)",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (1, 'TE', 'PM-KISAN సమ్మాన్ నిధి', 'PM-KISAN కింద, కేంద్ర ప్రభుత్వం దేశవ్యాప్తంగా అన్ని భూ యజమాన రైతు కుటుంబాలకు సంవత్సరానికి ₹6,000 ఆదాయ సహాయం అందిస్తుంది. ఈ మొత్తం ప్రతి నాలుగు నెలలకు ₹2,000 చొప్పున మూడు సమాన వాయిదాలలో నేరుగా బ్యాంక్ ఖాతాలకు చెల్లించబడుతుంది.', 'సంవత్సరానికి ₹6,000 నేరుగా రైతు బ్యాంక్ ఖాతాలకు ₹2,000 చొప్పున 3 వాయిదాలలో బదిలీ చేయబడుతుంది. విత్తనాలు, ఎరువులు మరియు కూలీల ఖర్చులు అన్నీ కవర్ అవుతాయి.');",
+
+      "-- PM-KISAN Hindi translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (1, 'HI', 'PM-KISAN सम्मान निधि', 'PM-KISAN के तहत केंद्र सरकार देश भर के सभी भूधारक किसान परिवारों को प्रति वर्ष ₹6,000 की आय सहायता प्रदान करती है। यह राशि हर चार महीने में ₹2,000 की तीन समान किस्तों में सीधे बैंक खातों में भेजी जाती है।', 'प्रति वर्ष ₹6,000 सीधे किसान बैंक खातों में ₹2,000 की 3 किस्तों में। बीज, उर्वरक और मजदूरी सभी खर्च कवर होते हैं।');",
+
+      "-- Rythu Bandhu Telugu translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (2, 'TE', 'రైతు బంధు పథకం', 'రైతు బంధు తెలంగాణ ప్రభుత్వం ద్వారా రైతు కుటుంబాలకు ప్రతి పంట సీజన్‌కు వ్యవసాయ అవసరాల కోసం ఆర్థిక సహాయం అందించే పథకం.', 'సంవత్సరానికి ఎకరాకు ₹10,000 (ఖరీఫ్ మరియు రబీ సీజన్లలో ₹5,000 చొప్పున). ప్రతి సీజన్ ప్రారంభానికి ముందు రైతు బ్యాంక్ ఖాతాలకు జమ చేయబడుతుంది.');",
+
+      "-- Ayushman Bharat Telugu translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (3, 'TE', 'ఆయుష్మాన్ భారత్ - PMJAY', 'ఆయుష్మాన్ భారత్ ప్రధాన మంత్రి జన్ ఆరోగ్య యోజన (PMJAY) ద్వితీయ మరియు తృతీయ ఆసుపత్రి చికిత్స కోసం కుటుంబానికి సంవత్సరానికి ₹5 లక్షల ఉచిత ఆరోగ్య బీమా కల్పించే ప్రపంచంలోనే అతిపెద్ద ఆరోగ్య బీమా పథకం.', 'కుటుంబానికి సంవత్సరానికి ₹5,00,000 ఉచిత ఆరోగ్య బీమా. ఆసుపత్రి ఖర్చులు, ఆసుపత్రి ముందు మరియు తర్వాత ఖర్చులు, డే-కేర్ శస్త్రచికిత్సలు కవర్ అవుతాయి.');",
+
+      "-- Ayushman Bharat Hindi translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (3, 'HI', 'आयुष्मान भारत - PMJAY', 'आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना (PMJAY) दुनिया की सबसे बड़ी स्वास्थ्य बीमा योजना है जो प्रति परिवार प्रति वर्ष ₹5 लाख का मुफ्त स्वास्थ्य कवर प्रदान करती है।', 'प्रति परिवार प्रति वर्ष ₹5,00,000 का मुफ्त स्वास्थ्य बीमा। अस्पताल खर्च, प्री-पोस्ट हॉस्पिटलाइजेशन और डे-केयर सर्जरी कवर होती है।');",
+
+      "-- NTR Vaidya Seva Telugu translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (4, 'TE', 'NTR వైద్య సేవ', 'NTR వైద్య సేవ ఆంధ్రప్రదేశ్‌లో దారిద్ర్య రేఖకు దిగువన ఉన్న కుటుంబాలకు నగదురహిత వైద్య సేవలు అందిస్తుంది. నెట్‌వర్క్ ఆసుపత్రులలో విస్తృత శ్రేణి వైద్య ప్రక్రియలను కవర్ చేస్తుంది.', 'ఎంపానెల్డ్ ఆసుపత్రులలో కుటుంబానికి సంవత్సరానికి ₹2,50,000 వరకు నగదురహిత చికిత్స. కార్డియాక్ సర్జరీలు, క్యాన్సర్ చికిత్స, కిడ్నీ ట్రాన్స్‌ప్లాంట్‌లతో సహా 1,059 ప్రక్రియలు కవర్ అవుతాయి.');",
+
+      "-- PMAY-G Telugu translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (5, 'TE', 'ప్రధాన మంత్రి ఆవాస్ యోజన - గ్రామీణ', 'PMAY-గ్రామీణ ఇల్లు లేని లేదా కచ్చా/శిథిలమైన ఇళ్లలో నివసిస్తున్న అర్హమైన గ్రామీణ కుటుంబాలకు పక్కా ఇళ్ల నిర్మాణానికి ఆర్థిక సహాయం అందిస్తుంది.', 'మైదాన ప్రాంతాలలో ₹1,20,000 మరియు కొండ ప్రాంతాలలో ₹1,30,000. SBM కింద మరుగుదొడ్డి నిర్మాణానికి అదనపు ₹12,000. MGNREGA కింద 90 రోజుల అన్‌స్కిల్డ్ లేబర్.');",
+
+      "-- PMAY-G Hindi translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (5, 'HI', 'प्रधानमंत्री आवास योजना - ग्रामीण', 'PMAY-ग्रामीण बेघर या कच्चे/जीर्ण-शीर्ण मकानों में रहने वाले पात्र ग्रामीण परिवारों को पक्के मकान बनाने के लिए आर्थिक सहायता प्रदान करती है।', 'मैदानी क्षेत्रों में ₹1,20,000 और पहाड़ी क्षेत्रों में ₹1,30,000। SBM के तहत शौचालय के लिए अतिरिक्त ₹12,000। MGNREGA के तहत 90 दिन का अकुशल श्रम।');",
+
+      "-- YSR Jagananna Colonies Telugu translation",
+      "INSERT INTO scheme_translations (scheme_id, language, scheme_name, description, benefit_details) VALUES (6, 'TE', 'YSR జగనన్న కాలనీలు', 'YSR జగనన్న కాలనీల పథకం ఆంధ్రప్రదేశ్‌లో భూమి లేదా ఇల్లు లేని అర్హమైన పేద కుటుంబాలకు హౌస్-సైట్ పట్టాలు మరియు ఇల్లు నిర్మాణానికి ఆర్థిక సహాయం అందిస్తుంది.', 'ఉచిత హౌస్-సైట్ పట్టా 1.5 సెంట్లు (పట్టణ) లేదా 1.5-3.5 సెంట్లు (గ్రామీణ). ఇల్లు నిర్మాణ సహాయం ₹1,80,000. రోడ్లు, డ్రైనేజ్, నీరు మరియు విద్యుత్ కాలనీ మౌలిక సదుపాయాలు.');"
+    ],
+
+    "rule_translations_sql": [
+      "-- PM-KISAN rules Telugu (replace rule_id values with actual IDs)",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (1, 'TE', 'వయస్సు 18 సంవత్సరాలు లేదా అంతకంటే ఎక్కువ ఉండాలి');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (2, 'TE', 'భూమి విస్తీర్ణం 5 హెక్టార్లు లేదా అంతకంటే తక్కువ ఉండాలి');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (3, 'TE', 'వార్షిక ఆదాయం ₹2,00,000 లేదా అంతకంటే తక్కువ ఉండాలి');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (4, 'TE', 'రైతు అయి ఉండాలి');",
+
+      "-- PM-KISAN rules Hindi",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (1, 'HI', 'आयु 18 वर्ष या उससे अधिक होनी चाहिए');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (2, 'HI', 'भूमि क्षेत्रफल 5 हेक्टेयर या उससे कम होना चाहिए');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (3, 'HI', 'वार्षिक आय ₹2,00,000 या उससे कम होनी चाहिए');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (4, 'HI', 'किसान होना चाहिए');",
+
+      "-- Ayushman Bharat rules Telugu",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (9, 'TE', 'అన్ని వయస్సుల వారికి వర్తిస్తుంది');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (10, 'TE', 'వార్షిక ఆదాయం ₹3,00,000 లేదా అంతకంటే తక్కువ ఉండాలి');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (11, 'TE', 'BPL కార్డ్ ఉండాలి');",
+
+      "-- PMAY-G rules Telugu",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (15, 'TE', 'వయస్సు 18 సంవత్సరాలు లేదా అంతకంటే ఎక్కువ ఉండాలి');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (16, 'TE', 'వార్షిక ఆదాయం ₹3,00,000 లేదా అంతకంటే తక్కువ ఉండాలి');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (17, 'TE', 'పక్కా ఇల్లు ఉండకూడదు');",
+      "INSERT INTO scheme_rule_translations (rule_id, language, display_text) VALUES (18, 'TE', 'భూమి విస్తీర్ణం 3 హెక్టార్లు లేదా అంతకంటే తక్కువ ఉండాలి');"
+    ]
+  }
+}
