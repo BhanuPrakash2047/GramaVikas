@@ -1,0 +1,455 @@
+[
+  {
+    "chunk_id": "srikakulam_district_overview",
+    "document_type": "district_profile",
+    "source": "NABARD Priority Lending Plan 2020-21, Srikakulam District",
+    "source_url": "https://www.nabard.org/auth/writereaddata/tender/1810194923Srikakulam%20PLP%202020-21%20Final%20Draft.pdf",
+    "secondary_source": "Government of Andhra Pradesh - Srikakulam District Profile",
+    "secondary_url": "https://srikakulam.ap.gov.in/about-district/",
+    "district": "Srikakulam",
+    "state": "Andhra Pradesh",
+    "agro_climatic_zone": "North Coastal Zone (Zone 7 - Eastern Plateau and Hills Region)",
+    "geographical_area_ha": 583700,
+    "total_mandals": 38,
+    "revenue_divisions": ["Srikakulam", "Palakonda", "Tekkali"],
+    "cultivable_land_ha": 356654,
+    "cultivable_land_pct": 61.10,
+    "major_rivers": ["Vamsadhara", "Nagavali", "Suvarnamukhi", "Vegavati", "Mahendratanaya", "Bahuda"],
+    "irrigation_projects": [
+      "BRR Vamsadhara Project",
+      "Madduvalasa Reservoir",
+      "Thotapalli Regulator",
+      "Narayanapuram Anicut"
+    ],
+    "population_rural_pct": 83.8,
+    "literacy_rate_pct": 55.31,
+    "agricultural_workers_pct": 47.36
+  },
+
+  {
+    "chunk_id": "srikakulam_district_soil_profile",
+    "document_type": "soil_profile",
+    "source": "NABARD Priority Lending Plan 2020-21, Srikakulam District",
+    "source_url": "https://www.nabard.org/auth/writereaddata/tender/1810194923Srikakulam%20PLP%202020-21%20Final%20Draft.pdf",
+    "secondary_source": "Soil Type as One of the Major Contributing Factors for Top Ten Agri-Producing States of India - JEL Sciences",
+    "secondary_url": "https://www.jelsciences.com/articles/jbres1312.php",
+    "district": "Srikakulam",
+    "soil_distribution": {
+      "sandy_clay_loam": {
+        "coverage_pct": 70,
+        "description": "Dominant soil type across most plains mandals",
+        "characteristics": {
+          "texture": "Medium-heavy, moderately well-drained",
+          "water_retention": "Moderate to good",
+          "pH_range": "6.5 - 7.5 (near neutral to slightly alkaline)",
+          "organic_matter": "Low to medium",
+          "fertility": "Moderate"
+        },
+        "nutrient_status": {
+          "nitrogen": "Low to medium deficient",
+          "phosphorus": "Low to medium",
+          "potassium": "Adequate to medium",
+          "zinc": "Deficient in many areas",
+          "boron": "Deficient",
+          "sulphur": "Marginally deficient"
+        },
+        "suitable_crops": ["Paddy", "Sugarcane", "Groundnut", "Pulses", "Vegetables"],
+        "location_mandals": ["Srikakulam", "Etcherla", "Ponduru", "Laveru", "Narasannapeta", "Amadalavalasa", "Gara", "Burja"]
+      },
+      "sandy_loam": {
+        "coverage_pct": 15,
+        "description": "Lighter soils found near coastal belt and river banks",
+        "characteristics": {
+          "texture": "Light, well-drained",
+          "water_retention": "Low",
+          "pH_range": "6.0 - 7.0 (slightly acidic to neutral)",
+          "organic_matter": "Very low",
+          "fertility": "Low"
+        },
+        "nutrient_status": {
+          "nitrogen": "Low — deficient",
+          "phosphorus": "Low — deficient",
+          "potassium": "Low to medium",
+          "zinc": "Deficient",
+          "iron": "Adequate"
+        },
+        "suitable_crops": ["Groundnut", "Sesame", "Vegetables", "Coconut", "Cashew"],
+        "location_mandals": ["Kaviti", "Sompeta", "Ichchapuram", "Mandasa", "Palasa", "Kanchili"]
+      },
+      "black_loamy": {
+        "coverage_pct": 7,
+        "description": "Black cotton soils found in limited inland patches",
+        "characteristics": {
+          "texture": "Heavy, clay-rich, shrinks and swells",
+          "water_retention": "High",
+          "pH_range": "7.5 - 8.5 (slightly to moderately alkaline)",
+          "organic_matter": "Medium",
+          "fertility": "Moderate to high"
+        },
+        "nutrient_status": {
+          "nitrogen": "Medium",
+          "phosphorus": "Low — deficient (fixed by calcium)",
+          "potassium": "High",
+          "zinc": "Deficient",
+          "manganese": "Adequate"
+        },
+        "suitable_crops": ["Cotton", "Sugarcane", "Sorghum", "Pulses"],
+        "location_mandals": ["Palakonda", "Saravakota", "Hiramandalam", "Pathapatnam"]
+      },
+      "red_alluvial": {
+        "coverage_pct": 8,
+        "description": "Red soils found in upland and transitional areas",
+        "characteristics": {
+          "texture": "Medium-light, well-drained",
+          "water_retention": "Low to moderate",
+          "pH_range": "5.5 - 6.5 (moderately acidic)",
+          "organic_matter": "Low",
+          "fertility": "Low"
+        },
+        "nutrient_status": {
+          "nitrogen": "Very low — severely deficient",
+          "phosphorus": "Low",
+          "potassium": "Medium to adequate",
+          "zinc": "Deficient",
+          "iron": "High (excess iron causes toxicity in paddy)"
+        },
+        "suitable_crops": ["Groundnut", "Millets", "Pulses", "Cashew", "Mango"],
+        "location_mandals": ["Kotabommali", "Vajrapukothuru", "Rajam", "Ranastalam"]
+      },
+      "laterite": {
+        "coverage_pct": 4,
+        "description": "Laterite soils in hilly Eastern Ghats agency area",
+        "characteristics": {
+          "texture": "Coarse, porous, well-drained",
+          "water_retention": "Very low",
+          "pH_range": "4.5 - 5.5 (strongly to moderately acidic)",
+          "organic_matter": "Very low",
+          "fertility": "Very poor — poor in N, P, lime"
+        },
+        "nutrient_status": {
+          "nitrogen": "Very low",
+          "phosphorus": "Very low",
+          "potassium": "Medium (rich in iron oxide and potash)",
+          "calcium": "Very low — lime deficient",
+          "iron_oxide": "High"
+        },
+        "suitable_crops": ["Cashew", "Millets", "Pulses", "Root crops"],
+        "location_mandals": ["Meliaputti", "Kothuru", "Hiramandalam", "Santhabommali", "Bhamini"]
+      }
+    },
+    "common_deficiencies_across_district": [
+      "Nitrogen (N) — most widespread deficiency",
+      "Zinc (Zn) — nearly universal in all soil types",
+      "Boron (B) — common in coastal sandy soils",
+      "Sulphur (S) — moderate deficiency in sandy loam areas",
+      "Phosphorus (P) — low in red and sandy soils"
+    ],
+    "fertilizer_consumption_district": {
+      "total_MT": 16001,
+      "types": ["Urea", "Complex (NPK)", "DAP", "MOP"],
+      "note": "Urea usage reduced by 35% over previous year per NABARD 2020-21 PLP"
+    }
+  },
+
+  {
+    "chunk_id": "srikakulam_mandal_etcherla",
+    "mandal":"Etcherla",
+    "document_type": "mandal_soil_profile",
+    "source": "Irrigation Profile of Srikakulam District - Government of Andhra Pradesh",
+    "source_url": "https://irrigationap.cgg.gov.in/wrd/static/districtProfiles/Srikakulam-IP.html",
+    "secondary_source": "NABARD PLP 2020-21 Srikakulam",
+    "district": "Srikakulam",
+    "division": "Srikakulam",
+    "geography": "Plains with Nagavali river irrigation",
+    "soil_type": "Sandy clay loam (dominant), alluvial patches near river",
+    "pH": "6.8 - 7.2",
+    "organic_matter": "Low (0.4 - 0.6%)",
+    "nutrient_status": {
+      "nitrogen": {"status": "Low", "recommendation_kg_ha": "120-150 kg Urea/ha split in 3 doses"},
+      "phosphorus": {"status": "Low to medium", "recommendation_kg_ha": "60-80 kg SSP/ha as basal"},
+      "potassium": {"status": "Medium", "recommendation_kg_ha": "40-50 kg MOP/ha as basal"},
+      "zinc": {"status": "Deficient", "recommendation": "25 kg ZnSO4/ha once in 3 years"},
+      "boron": {"status": "Marginally deficient", "recommendation": "Borax foliar spray 0.5%"}
+    },
+    "major_crops": ["Paddy (Kharif + Rabi)", "Groundnut", "Vegetables"],
+    "irrigation_source": "Narayanapuram Anicut - Nagavali River (18,362 acres ayacut)",
+    "irrigation_type": "Canal irrigated",
+    "crop_calendar": {
+      "kharif": {"sowing": "June-July", "harvest": "November-December", "main_crop": "Paddy"},
+      "rabi": {"sowing": "November-December", "harvest": "March-April", "main_crop": "Paddy/Vegetables"}
+    },
+    "common_issues": ["Nitrogen deficiency in upland patches", "Zinc deficiency in paddy", "Waterlogging in low-lying areas during heavy monsoon"]
+  },
+
+  {
+    "chunk_id": "srikakulam_mandal_narasannapeta",
+    "document_type": "mandal_soil_profile",
+    "source": "NABARD Priority Lending Plan 2020-21, Srikakulam District",
+    "source_url": "https://www.nabard.org/auth/writereaddata/tender/1810194923Srikakulam%20PLP%202020-21%20Final%20Draft.pdf",
+    "secondary_source": "Irrigation Profile of Srikakulam District",
+    "secondary_url": "https://irrigationap.cgg.gov.in/wrd/static/districtProfiles/Srikakulam-IP.html",
+    "district": "Srikakulam",
+    "mandal": "Narasannapeta",
+    "division": "Srikakulam",
+    "geography": "Mixed plains and gentle slopes, semi-irrigated",
+    "soil_type": "Sandy clay loam with red soil patches",
+    "pH": "6.5 - 7.0",
+    "organic_matter": "Low (0.3 - 0.5%)",
+    "nutrient_status": {
+      "nitrogen": {"status": "Low — deficient", "recommendation_kg_ha": "130-160 kg Urea/ha in 3 splits"},
+      "phosphorus": {"status": "Low", "recommendation_kg_ha": "75 kg DAP/ha basal"},
+      "potassium": {"status": "Medium", "recommendation_kg_ha": "40 kg MOP/ha basal"},
+      "zinc": {"status": "Deficient", "recommendation": "25 kg ZnSO4/ha once in 3 years"},
+      "sulphur": {"status": "Marginally deficient", "recommendation": "Use SSP instead of DAP for phosphorus to address sulphur simultaneously"}
+    },
+    "major_crops": ["Paddy", "Groundnut", "Sesame", "Pulses", "Sugarcane (limited)"],
+    "irrigation_source": "Madduvalasa Reservoir (limited canal), Bore wells",
+    "irrigation_type": "Mixed — canal and bore well",
+    "crop_calendar": {
+      "kharif": {"sowing": "June-July", "harvest": "November", "main_crop": "Paddy, Groundnut"},
+      "rabi": {"sowing": "November", "harvest": "February-March", "main_crop": "Pulses, Vegetables"}
+    },
+    "common_issues": ["N and P deficiency in groundnut", "Zinc deficiency universal", "Drought stress in rabi without irrigation"]
+  },
+
+  {
+    "chunk_id": "srikakulam_mandal_kaviti_sompeta",
+    "document_type": "mandal_soil_profile",
+    "source": "Brief Industrial Profile of Srikakulam District - MSME Development Institute",
+    "source_url": "https://dcmsme.gov.in/dips/srikakulam%20profile%20.pdf",
+    "secondary_source": "Srikakulam Wetlands Ecological Survey - SACON",
+    "secondary_url": "https://www.sacon.in/wp-content/uploads/2015/06/TechnicalReport/mathew/105_2012%20PR105%20SrikakulamReport.pdf",
+    "district": "Srikakulam",
+    "mandals": ["Kaviti", "Sompeta"],
+    "division": "Tekkali",
+    "geography": "Coastal belt with wetlands (Naupada, Sompeta swamps), Uddanam coconut belt",
+    "soil_type": "Sandy loam (coastal), alluvial near Bahuda river",
+    "pH": "6.0 - 6.8",
+    "organic_matter": "Very low (0.2 - 0.4%)",
+    "nutrient_status": {
+      "nitrogen": {"status": "Low — severely deficient", "recommendation_kg_ha": "150-180 kg Urea/ha in 3-4 splits for paddy"},
+      "phosphorus": {"status": "Low", "recommendation_kg_ha": "60 kg DAP/ha basal"},
+      "potassium": {"status": "Low to medium", "recommendation_kg_ha": "50-60 kg MOP/ha basal"},
+      "boron": {"status": "Deficient — critical for coconut", "recommendation": "Borax 0.5% foliar spray on coconut monthly"},
+      "zinc": {"status": "Deficient", "recommendation": "ZnSO4 25 kg/ha once in 3 years"},
+      "chloride": {"status": "Present — saltwater intrusion risk in coastal patches"}
+    },
+    "major_crops": ["Coconut (Uddanam region — major)", "Paddy", "Banana", "Cashew", "Coir products"],
+    "irrigation_source": "Rainfall + Bahuda river + bore wells",
+    "irrigation_type": "Rainfed (paddy), bore wells (horticulture)",
+    "special_features": "Uddanam region in Kaviti famous for coconut cultivation. Naupada-Sompeta wetland complex is ecologically protected. Coastal saline intrusion is a risk in low-lying areas.",
+    "crop_calendar": {
+      "kharif": {"sowing": "June-July", "harvest": "November", "main_crop": "Paddy"},
+      "year_round": {"crop": "Coconut, Banana"}
+    },
+    "common_issues": ["Boron deficiency in coconut causing button shedding", "Saline intrusion in coastal paddy fields", "Nitrogen severely deficient in sandy soils", "Flooding risk during cyclone season (October-November)"]
+  },
+
+  {
+    "chunk_id": "srikakulam_mandal_palakonda_hiramandalam",
+    "document_type": "mandal_soil_profile",
+    "source": "Soils in Andhra Pradesh - Testbook GK Reference",
+    "source_url": "https://testbook.com/andhra-pradesh-gk/soils-in-andhra-pradesh",
+    "secondary_source": "Different Soils of Andhra Pradesh - Sciencing",
+    "secondary_url": "https://sciencing.com/different-soils-of-andhra-pradesh-12383628.html",
+    "district": "Srikakulam",
+    "mandals": ["Palakonda", "Hiramandalam", "Santhabommali"],
+    "division": "Palakonda",
+    "geography": "Hilly Eastern Ghats tribal agency area, high altitude",
+    "soil_type": "Laterite (dominant in hills), black loamy (valley patches)",
+    "pH": "4.5 - 5.5 (laterite hills), 7.0 - 7.8 (valley black soils)",
+    "organic_matter": "Very low in laterite (0.2 - 0.3%), medium in valley soils (0.5 - 0.8%)",
+    "nutrient_status": {
+      "nitrogen": {"status": "Very low — severely deficient", "recommendation_kg_ha": "Use organic manure + 100-120 kg Urea/ha in splits"},
+      "phosphorus": {"status": "Very low", "recommendation_kg_ha": "80-100 kg SSP/ha basal (laterite fixes P heavily)"},
+      "potassium": {"status": "Medium (iron and potash available)", "recommendation_kg_ha": "40 kg MOP/ha basal"},
+      "calcium_lime": {"status": "Very deficient in laterite", "recommendation": "Lime application 2-4 tons/ha to correct acidity before sowing"},
+      "zinc": {"status": "Deficient", "recommendation": "ZnSO4 25 kg/ha"},
+      "iron": {"status": "Excess in laterite — can cause iron toxicity in sensitive crops"}
+    },
+    "major_crops": ["Millets (Ragi, Bajra)", "Pulses", "Cashew", "Turmeric", "Ginger", "Minor forest produce"],
+    "irrigation_source": "Rainfall dependent — tribal area with limited irrigation",
+    "irrigation_type": "Rainfed",
+    "special_features": "Tribal agency area. Soil acidity (low pH) is the biggest challenge. Lime application mandatory before crop cultivation. Phosphorus fixation by laterite iron oxides reduces fertilizer efficiency.",
+    "crop_calendar": {
+      "kharif": {"sowing": "June-July", "harvest": "October-November", "main_crop": "Millets, Pulses"},
+      "rabi": {"limited": true, "note": "Very limited rabi due to moisture stress and no irrigation"}
+    },
+    "common_issues": ["High soil acidity (pH 4.5-5.5) causing nutrient lockup", "Phosphorus fixation by iron oxides", "Severe nitrogen deficiency", "Poor water retention causing drought stress", "No irrigation infrastructure — fully rainfed"]
+  },
+
+  {
+    "chunk_id": "srikakulam_mandal_tekkali_palasa",
+    "document_type": "mandal_soil_profile",
+    "source": "NABARD Priority Lending Plan 2020-21, Srikakulam District",
+    "source_url": "https://www.nabard.org/auth/writereaddata/tender/1810194923Srikakulam%20PLP%202020-21%20Final%20Draft.pdf",
+    "secondary_source": "Irrigation Profile of Srikakulam District",
+    "secondary_url": "https://irrigationap.cgg.gov.in/wrd/static/districtProfiles/Srikakulam-IP.html",
+    "district": "Srikakulam",
+    "mandals": ["Tekkali", "Palasa"],
+    "division": "Tekkali",
+    "geography": "Mixed plains, river alluvial belt, semi-irrigated mandals",
+    "soil_type": "Sandy clay loam (dominant), alluvial river deposits",
+    "pH": "6.8 - 7.5",
+    "organic_matter": "Low to medium (0.4 - 0.7%)",
+    "nutrient_status": {
+      "nitrogen": {"status": "Low", "recommendation_kg_ha": "120-150 kg Urea/ha in 3 splits"},
+      "phosphorus": {"status": "Low to medium", "recommendation_kg_ha": "60 kg DAP/ha basal"},
+      "potassium": {"status": "Medium to adequate", "recommendation_kg_ha": "40 kg MOP/ha basal"},
+      "zinc": {"status": "Deficient", "recommendation": "ZnSO4 25 kg/ha once in 3 years"},
+      "sulphur": {"status": "Marginally deficient", "recommendation": "Use SSP (contains 12% S) as P source"}
+    },
+    "major_crops": ["Paddy", "Sugarcane", "Banana", "Vegetables", "Groundnut"],
+    "irrigation_source": "Vamsadhara Project, bore wells",
+    "irrigation_type": "Canal irrigated + bore wells",
+    "crop_calendar": {
+      "kharif": {"sowing": "June-July", "harvest": "November", "main_crop": "Paddy, Groundnut"},
+      "rabi": {"sowing": "November", "harvest": "March-April", "main_crop": "Paddy, Vegetables, Pulses"}
+    },
+    "common_issues": ["Zinc deficiency in paddy is widespread", "Nitrogen management critical for high-yield paddy", "Groundnut needs sulphur supplementation"]
+  },
+
+  {
+    "chunk_id": "srikakulam_climate_weather_profile",
+    "document_type": "climate_weather_profile",
+    "source": "Weather and Climate Data - Srikakulam (weatherandclimate.com)",
+    "source_url": "https://weatherandclimate.com/india/andhra-pradesh/srikakulam",
+    "secondary_source": "Assessment of Future Climate and Kharif Paddy Yields - CERES-Rice Study, AP",
+    "secondary_url": "http://cwejournal.org/vol18no1/passessment-of-future-climate-and-kharif-paddy-yields-using-ceres-rice-in-the-state-of-andhra-pradeshp",
+    "tertiary_source": "Exploring Effects of Climate Change on Rice Yields in AP - SCC Press",
+    "tertiary_url": "https://sccpress.com/ars/article/download/100/257",
+    "district": "Srikakulam",
+    "climate_classification": "Tropical Wet and Dry (Aw) - Savanna Climate",
+    "elevation_m": 99,
+    "annual_temperature": {
+      "mean_celsius": 28.86,
+      "summer_max_celsius": 38,
+      "winter_min_celsius": 18,
+      "critical_threshold": "Above 33°C negatively impacts rice reproductive activity and yield"
+    },
+    "rainfall": {
+      "annual_normal_mm": 1162,
+      "actual_2018_19_mm": 1000.1,
+      "monthly_avg_mm": 41.78,
+      "rainy_days_annually": 38.63,
+      "distribution": {
+        "southwest_monsoon_pct": 76.7,
+        "northeast_monsoon_pct": 23.3,
+        "winter_summer_pct": 0,
+        "note": "Srikakulam receives highest mean Kharif rainfall among AP coastal districts"
+      }
+    },
+    "seasons": {
+      "kharif": {
+        "period": "June - October",
+        "monsoon_onset": "June (Southwest Monsoon)",
+        "rainfall_mm": "800-900",
+        "temperature_range_celsius": "28-38",
+        "humidity_pct": "75-90",
+        "main_crops": ["Paddy", "Groundnut", "Sesame", "Pulses", "Vegetables"],
+        "risk_factors": ["Cyclones (October-November peak)", "Flooding in low-lying areas", "Blast and BLB in rice during high humidity"]
+      },
+      "rabi": {
+        "period": "November - March",
+        "monsoon": "Northeast Monsoon (November-December)",
+        "rainfall_mm": "200-300",
+        "temperature_range_celsius": "18-30",
+        "humidity_pct": "60-75",
+        "main_crops": ["Paddy (2nd crop)", "Groundnut", "Pulses", "Vegetables"],
+        "note": "Rice productivity surges in coastal districts during Rabi vs Kharif due to cooler temperatures and lower disease pressure"
+      },
+      "summer": {
+        "period": "March - June",
+        "rainfall_mm": "Very low (50-100mm)",
+        "temperature_celsius": "30-42",
+        "humidity_pct": "50-65",
+        "main_crops": ["Vegetables (irrigated)", "Watermelon"],
+        "note": "Water stress period; bore wells critical for any cultivation"
+      }
+    },
+    "cyclone_risk": {
+      "risk_level": "HIGH",
+      "peak_season": "October - November (post-monsoon)",
+      "coastline_km": 193,
+      "note": "Srikakulam has 193km coastline on Bay of Bengal making it highly cyclone-prone. Kaviti, Sompeta, Mandasa, Ichchapuram mandals most vulnerable.",
+      "historical_events": "Frequent cyclonic disturbances; district has AWS network monitoring 59 weather stations per mandal"
+    },
+    "weather_monitoring": {
+      "source": "AP State Developmental Planning Society (APSDPS)",
+      "network": {
+        "automatic_weather_stations": 59,
+        "parameters": ["Rainfall", "Air Temperature", "Humidity", "Wind Speed", "Wind Direction", "Atmospheric Pressure"],
+        "automatic_rain_gauges_urban": 10,
+        "global_radiation_sensors": 4,
+        "soil_moisture_sensors": 48,
+        "river_gauges": 12,
+        "reservoir_sensors": 6,
+        "tidal_gauge": 1
+      },
+      "note": "Almost every mandal has an Automatic Weather Station (AWS). Real-time data can be integrated via APSDPS API for live weather context in RAG pipeline."
+    },
+    "disease_risk_by_weather": {
+      "blast_in_rice": {
+        "trigger": "High humidity >80%, temperature 24-28°C, cool nights",
+        "peak_months": ["August", "September"],
+        "high_risk_mandals": ["Etcherla", "Narasannapeta", "Amadalavalasa", "Burja"]
+      },
+      "bacterial_leaf_blight": {
+        "trigger": "Temperature 25-30°C, strong winds, high humidity, heavy rainfall",
+        "peak_months": ["August", "September", "October"],
+        "high_risk_mandals": ["All irrigated plain mandals"]
+      },
+      "late_blight_potato": {
+        "trigger": "RH >90%, temperature 10-25°C",
+        "note": "Not a primary risk in Srikakulam given high temperatures; limited potato cultivation"
+      }
+    }
+  },
+
+  {
+    "chunk_id": "srikakulam_fertilizer_recommendations",
+    "document_type": "fertilizer_nutrient_recommendations",
+    "source": "NABARD Priority Lending Plan 2020-21, Srikakulam District",
+    "source_url": "https://www.nabard.org/auth/writereaddata/tender/1810194923Srikakulam%20PLP%202020-21%20Final%20Draft.pdf",
+    "secondary_source": "Assessment of Future Climate and Kharif Paddy Yields in AP (Fertilizer district data)",
+    "secondary_url": "http://cwejournal.org/vol18no1/passessment-of-future-climate-and-kharif-paddy-yields-using-ceres-rice-in-the-state-of-andhra-pradeshp",
+    "district": "Srikakulam",
+    "fertilizer_use_avg_kg_ha": 70,
+    "note": "Srikakulam, Vizianagaram and Visakhapatnam — 70 kg/ha fertilizer use (lowest tier in AP, compared to 140+ kg/ha in Guntur, Prakasam)",
+    "crop_wise_recommendations": {
+      "paddy_kharif": {
+        "soil": "Sandy clay loam",
+        "nitrogen_kg_ha": "120 (as Urea 261 kg/ha) — split 40:40:40 at basal, tillering, panicle initiation",
+        "phosphorus_kg_ha": "60 (as DAP 130 kg/ha or SSP 375 kg/ha) — full basal",
+        "potassium_kg_ha": "40 (as MOP 67 kg/ha) — full basal",
+        "zinc": "ZnSO4 25 kg/ha if not applied previous season",
+        "note": "Zinc deficiency is most critical micronutrient for paddy in Srikakulam. Apply ZnSO4 to nursery seedlings and main field."
+      },
+      "groundnut_kharif": {
+        "soil": "Sandy loam / Sandy clay loam",
+        "nitrogen_kg_ha": "20 (starter dose only — crop is N-fixing)",
+        "phosphorus_kg_ha": "60 (as SSP — also supplies sulphur)",
+        "potassium_kg_ha": "40",
+        "calcium": "Gypsum 500 kg/ha at pegging stage (critical for pod filling)",
+        "boron": "0.5% Borax foliar spray at flowering",
+        "note": "Use SSP over DAP for groundnut — provides sulphur (12%) which groundnut needs. Gypsum at pegging is non-negotiable."
+      },
+      "coconut_kaviti_sompeta": {
+        "soil": "Sandy loam coastal",
+        "nitrogen_per_palm_per_year_g": 500,
+        "phosphorus_per_palm_per_year_g": 320,
+        "potassium_per_palm_per_year_g": 1200,
+        "boron": "Borax 100g per palm per year — critical to prevent button shedding",
+        "note": "Potassium is most important for coconut yield. Boron deficiency causes button shedding (immature nut drop) which is major problem in Kaviti Uddanam region."
+      },
+      "sugarcane": {
+        "soil": "Sandy clay loam",
+        "nitrogen_kg_ha": "250-300 in 4-5 splits over crop duration",
+        "phosphorus_kg_ha": "80 basal",
+        "potassium_kg_ha": "120 in 2 splits",
+        "zinc": "ZnSO4 25 kg/ha basal",
+        "note": "High K requirement is critical for sugarcane. Avoid urea excess in early stages to prevent lodging."
+      }
+    }
+  }
+]
